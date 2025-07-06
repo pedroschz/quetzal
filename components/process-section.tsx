@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Package, Settings, Search, Heart, CheckCircle } from "lucide-react";
+import { Package, Settings, Search, Heart } from "lucide-react";
 
 const processSteps = [
   {

@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { Users, Download, Diamond, TrendingUp, Award, Globe } from "lucide-react";
+import { Users, Download, Diamond } from "lucide-react";
 
 function useCountUp(end: number, duration: number = 2) {
   const [count, setCount] = useState(0);

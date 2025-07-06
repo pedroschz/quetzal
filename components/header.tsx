@@ -40,9 +40,7 @@ export function Header() {
   }, []);
 
   const textColor = theme === "light" ? "text-white" : "text-black";
-  const hoverTextColor = theme === "light" ? "hover:text-white" : "hover:text-black";
   const mutedTextColor = theme === "light" ? "text-white/80" : "text-black/70";
-  const hoverMutedTextColor = theme === "light" ? "hover:opacity-100" : "hover:text-black";
   
   return (
     <motion.header
@@ -64,9 +62,9 @@ export function Header() {
             Quetzal
           </Link>
           <nav className={`hidden md:flex items-center gap-8 transition-colors duration-300 ${mutedTextColor}`}>
-            <Link href="#mision" className={`opacity-80 transition-opacity ${hoverMutedTextColor}`}>Misión</Link>
-            <Link href="#stats" className={`opacity-80 transition-opacity ${hoverMutedTextColor}`}>Impacto</Link>
-            <Link href="#proceso" className={`opacity-80 transition-opacity ${hoverMutedTextColor}`}>Proceso</Link>
+            <Link href="#mision" className={`opacity-80 transition-opacity hover:opacity-100`}>Misión</Link>
+            <Link href="#stats" className={`opacity-80 transition-opacity hover:opacity-100`}>Impacto</Link>
+            <Link href="#proceso" className={`opacity-80 transition-opacity hover:opacity-100`}>Proceso</Link>
           </nav>
           <div className="flex items-center gap-4">
             <a 
